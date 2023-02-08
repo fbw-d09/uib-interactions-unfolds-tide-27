@@ -1,0 +1,129 @@
+* {
+  margin: 0 auto;
+  background-color: rgb(147, 166, 225);
+}
+
+.massage {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box,
+h1 {
+  /* border: 2px solid red; */
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: lime;
+  text-shadow: 5px 5px 5px black;
+}
+
+.box:hover {
+  color: rgb(255, 0, 0);
+}
+
+h1 {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 306px;
+  padding: 30px;
+  color: red;
+}
+
+.blau {
+  background-color: steelblue;
+  position: relative;
+  bottom: 330px;
+  right: 100px;
+  transition: 2s;
+  transform-origin: top left;
+  border-radius: 10px;
+}
+
+.gelb {
+  background-color: yellow;
+  position: relative;
+  bottom: 330px;
+  right: 100px;
+  transition: 1s;
+  transform-origin: bottom left;
+  border-radius: 10px;
+}
+
+.grau {
+  background-color: dimgray;
+  position: relative;
+  bottom: 730px;
+  left: 100px;
+  transition: 1s;
+  transform-origin: top right;
+  border-radius: 10px;
+}
+
+.braun {
+  background-color: rosybrown;
+  position: relative;
+  bottom: 730px;
+  left: 100px;
+  transition: 2s ease-in-out;
+  transform-origin: bottom right;
+  border-radius: 10px;
+}
+
+main:hover .blau,
+main:hover .braun {
+  transform: rotate(90deg) scale(1.1);
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+
+main:hover .gelb,
+main:hover .grau {
+  transition: 3s;
+  transform: rotate(-90deg) scale(1.1);
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0% 20%
+  );
+}
+
+/* .grau:hover {
+  transform: rotate(-90deg);
+} */
+/* .blau:hover{
+    transform: rotate(-90deg);   
+} */
+
+/* .gelb:hover {
+    transform: rotate(-90deg);
+}  */
+
+/* .braun:hover {
+    transform: rotate(90deg);
+    
+} */
